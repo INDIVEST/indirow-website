@@ -19,125 +19,7 @@
     <!-- Style css -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
-    <style>
-        #fade {
-            display: none;
-            position: fixed;
-            top: 0%;
-            left: 0%;
-            width: 100%;
-            height: 100%;
-            background-color: black;
-            z-index: 1001;
-            -moz-opacity: 0.8;
-            opacity: .80;
-            filter: alpha(opacity=80);
-        }
-
-        #light {
-            display: none;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            max-width: 600px;
-            max-height: 360px;
-            margin-left: -300px;
-            margin-top: -180px;
-            border: 2px solid #FFF;
-            background: #FFF;
-            z-index: 1002;
-            overflow: visible;
-        }
-
-        #boxclose {
-            float: right;
-            cursor: pointer;
-            color: #fff;
-            border: 1px solid #AEAEAE;
-            border-radius: 3px;
-            background: #222222;
-            font-size: 31px;
-            font-weight: bold;
-            display: inline-block;
-            line-height: 0px;
-            padding: 11px 3px;
-            position: absolute;
-            right: 2px;
-            top: 2px;
-            z-index: 1002;
-            opacity: 0.9;
-        }
-
-        .boxclose:before {
-            content: "×";
-        }
-
-        #fade:hover~#boxclose {
-            display: none;
-        }
-
-        .test:hover~.test2 {
-            display: none;
-        }
-    </style>
-
-    <style>
-        #fadee {
-            display: none;
-            position: fixed;
-            top: 0%;
-            left: 0%;
-            width: 100%;
-            height: 100%;
-            background-color: black;
-            z-index: 1001;
-            -moz-opacity: 0.8;
-            opacity: .80;
-            filter: alpha(opacity=80);
-        }
-
-        #lightt {
-            display: none;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            max-width: 600px;
-            max-height: 360px;
-            margin-left: -300px;
-            margin-top: -180px;
-            border: 2px solid #FFF;
-            background: #FFF;
-            z-index: 1002;
-            overflow: visible;
-        }
-
-        #boxclosee {
-            float: right;
-            cursor: pointer;
-            color: #fff;
-            border: 1px solid #AEAEAE;
-            border-radius: 3px;
-            background: #222222;
-            font-size: 31px;
-            font-weight: bold;
-            display: inline-block;
-            line-height: 0px;
-            padding: 11px 3px;
-            position: absolute;
-            right: 2px;
-            top: 2px;
-            z-index: 1002;
-            opacity: 0.9;
-        }
-
-        .boxclosee:before {
-            content: "×";
-        }
-
-        #fadee:hover~#boxclosee {
-            display: none;
-        }
-    </style>
+ 
 
 </head>
 
@@ -836,7 +718,6 @@
                                 <ul>
                                     <li class="py-2"><a class="nav-link scroll" href="#home">Home</a></li>
                                     <li class="py-2"><a class="nav-link scroll" href="#features">Features</a></li>
-                                    <li class="py-2"><a class="nav-link scroll" href="#features">Features</a></li>
                                     <li class="py-2"><a class="nav-link scroll" href="#Products">Products</a></li>
 
                                 </ul>
@@ -911,90 +792,8 @@
 
     <!-- Active js -->
     <script src="./assets/js/active.js"></script>
-
-    <script>
-        var modal = document.getElementById("myModal");
-        var btn = document.getElementById("myBtn");
-        var span = document.getElementsByClassName("close")[0];
-        btn.onclick = function () {
-            modal.style.display = "block";
-        }
-        span.onclick = function () {
-            modal.style.display = "none";
-        }
-        window.onclick = function (event) {
-            if (event.target == modal) {
-                modal.style.display = "none";
-            }
-        }
-    </script>
-    <script>
-        var modall = document.getElementById("myModall");
-        var btnn = document.getElementById("myBtnn");
-        var spann = document.getElementsByClassName("closee")[0];
-        btnn.onclick = function () {
-            modall.style.display = "block";
-        }
-        spann.onclick = function () {
-            modall.style.display = "none";
-        }
-        window.onclick = function (event) {
-            if (event.target == modall) {
-                modall.style.display = "none";
-            }
-        }
-    </script>
-
-    <script>
-        window.document.onkeydown = function (e) {
-            if (!e) {
-                e = event;
-            }
-            if (e.keyCode == 27) {
-                lightbox_close();
-            }
-        }
-
-        function lightbox_open() {
-            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-            window.scrollTo(0, 0);
-            document.getElementById('light').style.display = 'block';
-            document.getElementById('fade').style.display = 'block';
-            lightBoxVideo.play();
-        }
-
-        function lightbox_close() {
-            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
-            document.getElementById('light').style.display = 'none';
-            document.getElementById('fade').style.display = 'none';
-            lightBoxVideo.pause();
-        }
-    </script>
-    <script>
-        window.document.onkeydown = function (e) {
-            if (!e) {
-                e = event;
-            }
-            if (e.keyCode == 27) {
-                lightbox_closee();
-            }
-        }
-
-        function lightbox_openn() {
-            var lightBoxVideo = document.getElementById("VisaChipCardVideoo");
-            window.scrollTo(0, 0);
-            document.getElementById('lightt').style.display = 'block';
-            document.getElementById('fadee').style.display = 'block';
-            lightBoxVideo.play();
-        }
-
-        function lightbox_closee() {
-            var lightBoxVideoo = document.getElementById("VisaChipCardVideoo");
-            document.getElementById('lightt').style.display = 'none';
-            document.getElementById('fadee').style.display = 'none';
-            lightBoxVideoo.pause();
-        }
-    </script>
+    <script src="./assets/js/indirow.js"></script>
+   
 
 
 </body>
