@@ -567,15 +567,41 @@
                                 <div id="fadee" onClick="lightbox_closee();"></div>
 
                                 <div class="for-mob">
+                                    <button id="myBtnn" class=" mt-5 btnn">
+                                        Partner with us Now !
+                                    </button>
+                                </div>
+                                <div id="myModall" class="modal">
+
+                                    <!-- Modal content -->
+                                    <div class="modal-content uper">
+                                        <span style="cursor: pointer;" class="closee">&times;</span>
+                                        <div>
+                                            <h4 class="text-center">Download Indirow</h4>
+                                            <div class="d-flex justify-content-between flex-wrap">
+                                                <img src="https://bangladeshpost.net/webroot/uploads/featureimage/2022-05/6283c67e772ca.jpg"
+                                                    alt="">
+                                                <div class="mt-2">
+                                                    <h6 class="text-center fw-bold my-3"> Scan QR code</h6>
+                                                    <ol style="margin-left: 20px;">
+                                                        <li>Open your phone camera and scan the QR code.</li>
+                                                        <li>Click on the link generated to download Indirow.</li>
+                                                        <li>Install.</li>
+                                                    </ol>
+                                                </div>
+                                            </div>
+    
+                                        </div>
+                                    </div>
+    
+                                </div>
+
+                                <div class="for-mob">
                                     <button onclick="lightbox_openn();" class=" mt-5 btnn">
                                         Why Indirow ?
                                     </button>
                                 </div>
-                                <div class="for-mob">
-                                    <button id="myBtn-2" class=" mt-5 btnn">
-                                        Partner with us Now !
-                                    </button>
-                                </div>
+
                             </div>
                             <div id="myModal-2" class="modal">
                                 <div class="modal-content" style="width: 70%;">
@@ -903,9 +929,9 @@
         }
     </script>
     <script>
-        var modall = document.getElementById("myModal-1");
-        var btnn = document.getElementById("myBtn-1");
-        var spann = document.getElementsByClassName("close-1")[0];
+        var modall = document.getElementById("myModall");
+        var btnn = document.getElementById("myBtnn");
+        var spann = document.getElementsByClassName("closee")[0];
         btnn.onclick = function () {
             modall.style.display = "block";
         }
@@ -915,22 +941,6 @@
         window.onclick = function (event) {
             if (event.target == modall) {
                 modall.style.display = "none";
-            }
-        }
-    </script>
-    <script>
-        var modalll = document.getElementById("myModal-2");
-        var btnnn = document.getElementById("myBtn-2");
-        var spannn = document.getElementsByClassName("close-2")[0];
-        btnnn.onclick = function () {
-            modalll.style.display = "block";
-        }
-        spannn.onclick = function () {
-            modalll.style.display = "none";
-        }
-        window.onclick = function (event) {
-            if (event.target == modall) {
-                modalll.style.display = "none";
             }
         }
     </script>
