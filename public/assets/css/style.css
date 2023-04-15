@@ -2954,6 +2954,28 @@ ul.check-list li {
     list-style: none;
     margin-right: 20px;
   }
+
+
+  video#VisaChipCardVideo {
+    width: 40%;
+    position: fixed;
+    top: 92px;
+    left: 10%;
+  }
+video#VisaChipCardVideoo {
+  width: 40%;
+  position: fixed;
+  top: 92px;
+  left: 10%;
+}
+
+.cls{
+  width: fit-content !important;
+  position: fixed !important;
+   top: 92px !important;
+    right: 30% !important;
+}
+
   .service-text ul {
     line-height: 30px;
     margin: 20px;
@@ -2990,3 +3012,23 @@ ul.check-list li {
 .modal-content.uper{
   width: 30%;
   }
+
+  video#VisaChipCardVideo {
+    width: 80%;
+    position: fixed;
+    top: 92px;
+    left: 10%;
+  }
+video#VisaChipCardVideoo {
+  width: 80%;
+  position: fixed;
+  top: 92px;
+  left: 10%;
+}
+
+.cls{
+  width: fit-content !important;
+  position: fixed !important;
+   top: 92px !important;
+    right: 10% !important;
+}

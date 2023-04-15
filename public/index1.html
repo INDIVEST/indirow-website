@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #fadee {
+  display: none;
+  position: fixed;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: 1001;
+  -moz-opacity: 0.8;
+  opacity: .80;
+  filter: alpha(opacity=80);
+}
+
+#lightt {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  max-width: 600px;
+  max-height: 360px;
+  margin-left: -300px;
+  margin-top: -180px;
+  border: 2px solid #FFF;
+  background: #FFF;
+  z-index: 1002;
+  overflow: visible;
+}
+
+#boxclosee {
+  float: right;
+  cursor: pointer;
+  color: #fff;
+  border: 1px solid #AEAEAE;
+  border-radius: 3px;
+  background: #222222;
+  font-size: 31px;
+  font-weight: bold;
+  display: inline-block;
+  line-height: 0px;
+  padding: 11px 3px;
+  position: absolute;
+  right: 2px;
+  top: 2px;
+  z-index: 1002;
+  opacity: 0.9;
+}
+
+.boxclosee:before {
+  content: "×";
+}
+
+#fadee:hover ~ #boxclosee {
+  display:none;
+}
+
+    </style>
+</head>
+<body>
+    
+    <h1>CSS/Javascript popup with Lightbox effect</h1>
+
+<div id="lightt">
+  <a class="boxclosee" id="boxclosee" onclick="lightbox_closee();"></a>
+  <video id="VisaChipCardVideoo" width="600" controls>
+      <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+      <!--Browser does not support <video> tag -->
+    </video>
+</div>
+
+<div id="fadee" onClick="lightbox_closee();"></div>
+
+<div>
+  <a href="#" onclick="lightbox_openn();">Watch video</a>
+</div>
+
+<div class="test">test</div>
+<div class="test2">test2</div>
+<script>
+    window.document.onkeydown = function(e) {
+  if (!e) {
+    e = event;
+  }
+  if (e.keyCode == 27) {
+    lightbox_closee();
+  }
+}
+
+function lightbox_openn() {
+  var lightBoxVideo = document.getElementById("VisaChipCardVideoo");
+  window.scrollTo(0, 0);
+  document.getElementById('lightt').style.display = 'block';
+  document.getElementById('fadee').style.display = 'block';
+  lightBoxVideo.play();
+}
+
+function lightbox_closee() {
+  var lightBoxVideoo = document.getElementById("VisaChipCardVideoo");
+  document.getElementById('lightt').style.display = 'none';
+  document.getElementById('fadee').style.display = 'none';
+  lightBoxVideoo.pause();
+}
+</script>
+</body>
+</html>

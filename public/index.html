@@ -19,6 +19,126 @@
     <!-- Style css -->
     <link rel="stylesheet" href="./assets/css/style.css">
 
+    <style>
+        #fade {
+            display: none;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 1001;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=80);
+        }
+
+        #light {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            max-width: 600px;
+            max-height: 360px;
+            margin-left: -300px;
+            margin-top: -180px;
+            border: 2px solid #FFF;
+            background: #FFF;
+            z-index: 1002;
+            overflow: visible;
+        }
+
+        #boxclose {
+            float: right;
+            cursor: pointer;
+            color: #fff;
+            border: 1px solid #AEAEAE;
+            border-radius: 3px;
+            background: #222222;
+            font-size: 31px;
+            font-weight: bold;
+            display: inline-block;
+            line-height: 0px;
+            padding: 11px 3px;
+            position: absolute;
+            right: 2px;
+            top: 2px;
+            z-index: 1002;
+            opacity: 0.9;
+        }
+
+        .boxclose:before {
+            content: "×";
+        }
+
+        #fade:hover~#boxclose {
+            display: none;
+        }
+
+        .test:hover~.test2 {
+            display: none;
+        }
+    </style>
+
+    <style>
+        #fadee {
+            display: none;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            width: 100%;
+            height: 100%;
+            background-color: black;
+            z-index: 1001;
+            -moz-opacity: 0.8;
+            opacity: .80;
+            filter: alpha(opacity=80);
+        }
+
+        #lightt {
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            max-width: 600px;
+            max-height: 360px;
+            margin-left: -300px;
+            margin-top: -180px;
+            border: 2px solid #FFF;
+            background: #FFF;
+            z-index: 1002;
+            overflow: visible;
+        }
+
+        #boxclosee {
+            float: right;
+            cursor: pointer;
+            color: #fff;
+            border: 1px solid #AEAEAE;
+            border-radius: 3px;
+            background: #222222;
+            font-size: 31px;
+            font-weight: bold;
+            display: inline-block;
+            line-height: 0px;
+            padding: 11px 3px;
+            position: absolute;
+            right: 2px;
+            top: 2px;
+            z-index: 1002;
+            opacity: 0.9;
+        }
+
+        .boxclosee:before {
+            content: "×";
+        }
+
+        #fadee:hover~#boxclosee {
+            display: none;
+        }
+    </style>
+
 </head>
 
 <body class="homepage-2">
@@ -109,17 +229,17 @@
                                         <h4 class="text-center">Download Indirow</h4>
                                         <div class="d-flex justify-content-between flex-wrap">
                                             <img src="https://bangladeshpost.net/webroot/uploads/featureimage/2022-05/6283c67e772ca.jpg"
-                                            alt="">
-                                    <div class="mt-2">
-                                        <h6 class="text-center fw-bold my-3"> Scan QR code</h6>
-                                        <ol style="margin-left: 20px;">
-                                         <li>Open your phone camera and scan the QR code.</li>
-                                         <li>Click on the link generated to download Indirow.</li>
-                                         <li>Install.</li>
-                                        </ol>
-                                    </div>
-                                </div>
-                                   
+                                                alt="">
+                                            <div class="mt-2">
+                                                <h6 class="text-center fw-bold my-3"> Scan QR code</h6>
+                                                <ol style="margin-left: 20px;">
+                                                    <li>Open your phone camera and scan the QR code.</li>
+                                                    <li>Click on the link generated to download Indirow.</li>
+                                                    <li>Install.</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
 
@@ -168,7 +288,7 @@
                         <!-- Icon Box -->
                         <div class="icon-box text-center p-4 wow" data-wow-duration="2s" data-wow-delay="0.2s">
                             <!-- Featured Icon -->
-                            <div class="featured-icon mb-3">
+                            <div class="featured-icon " style="margin-bottom:8px ;">
                                 <img src="./assets/img/service.png" alt="">
                             </div>
                             <!-- Icon Text -->
@@ -183,11 +303,11 @@
                         <!-- Icon Box -->
                         <div class="icon-box text-center p-4 wow" data-wow-duration="2s" data-wow-delay="0.4s">
                             <!-- Featured Icon -->
-                            <div class="featured-icon mb-3">
+                            <div class="featured-icon" style="margin-top:26px;" >
                                 <img src="./assets/img/freecharge.png" alt="">
                             </div>
                             <!-- Icon Text -->
-                            <div class="icon-text" style="margin-top: 78px;">
+                            <div class="icon-text" style="margin-top: 45px;">
                                 <h3 class="mb-2">Free for Retail Customers</h3>
                                 <p>Indirow does not charge direct retail customers for the services offered.</p>
                             </div>
@@ -365,21 +485,21 @@
                                     </div>
                                 </li>
                             </ul>
-                            <div class="for-mob">
-                                <button id="myBtn-1" class="mt-5 btnn">
-                                    About Indirow
-                                </button>
+                            <div id="light">
+                                <a class="boxclose cls" id="boxclose" onclick="lightbox_close();"></a>
+                                <video id="VisaChipCardVideo" width="600" controls>
+                                    <source src="./assets/video/Indirow_Video01_English.mp4" type="video/mp4">
+                                    <!--Browser does not support <video> tag -->
+                                </video>
                             </div>
 
-                            <div id="myModal-1" class="modal">
-                                <div class="modal-content" style="width: 70%;">
-                                    <span style="cursor: pointer;" class="close-1">&times;</span>
-                                    <video controls>
-                                        <source src="./assets/video/Indirow_Video01_English.mp4" type="video/mp4">
-                                        Your browser does not support the video tag.
-                                    </video>
+                            <div id="fade" onClick="lightbox_close();"></div>
+                            <div>
+                                <div class="for-mob">
+                                    <button onclick="lightbox_open();" class=" mt-5 btnn">
+                                        About Indirow
+                                    </button>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -434,14 +554,26 @@
                                 </li>
                             </ul>
                             <div style="gap:30px" class="d-flex justify-content-start align-items-center">
+
+
+                                <div id="lightt">
+                                    <a class="boxclosee cls" id="boxclosee" onclick="lightbox_closee();"></a>
+                                    <video id="VisaChipCardVideoo" width="600" controls>
+                                        <source src="./assets/video/IndiRow_Video02_English.mp4" type="video/mp4">
+                                        <!--Browser does not support <video> tag -->
+                                    </video>
+                                </div>
+
+                                <div id="fadee" onClick="lightbox_closee();"></div>
+
                                 <div class="for-mob">
-                                    <button class=" mt-5 btnn">
-                                        Partner with us Now !
+                                    <button onclick="lightbox_openn();" class=" mt-5 btnn">
+                                        Why Indirow ?
                                     </button>
                                 </div>
                                 <div class="for-mob">
                                     <button id="myBtn-2" class=" mt-5 btnn">
-                                        Why Indirow ?
+                                        Partner with us Now !
                                     </button>
                                 </div>
                             </div>
@@ -660,7 +792,10 @@
                                     <img class="logo" src="./assets/img/a.png" alt="">
                                 </a>
                                 <!-- Social Icons -->
-                                <div class="social-icons d-flex">
+                                <div class="social-icons d-flex flex-column">
+                                    <h5 style="border-bottom: 2px solid rgb(212, 212, 212); width: fit-content;"
+                                        class="mt-3">Follow us</h5>
+                                    <br>
                                     <a target="_blank" href="https://www.instagram.com/indirow_india/">
                                         <img src="./assets/img/instagram.png" alt="">
                                     </a>
@@ -684,12 +819,12 @@
                         <div class="col-12 col-sm-6 col-lg-3 ">
                             <div class="footer-items">
 
-                                <ul >
+                                <ul>
                                     <li class="py-2"><a class="nav-link scroll" href="#about">About us</a></li>
                                     <li class="py-2"><a class="nav-link scroll" href="#partner">Partner with us</a></li>
                                     <li class="py-2"><a class="nav-link scroll" href="#Journey">Journey</a></li>
                                     <li class="py-2"><a class="nav-link scroll" href="#contact">Contact us</a></li>
-                                   
+
                                 </ul>
                             </div>
                         </div>
@@ -700,8 +835,8 @@
                                 <!-- Footer Title -->
                                 <h3 class="footer-title mb-2">Download</h3>
                                 <!-- Store Buttons -->
-                                <div class="button-group store-buttons store-black d-flex ">
-                                    <a  href="#">
+                                <div class="button-group store-buttons store-black  ">
+                                    <a href="#">
                                         <img src="./assets/img/icon/google-play-black.png" alt="">
                                     </a>
                                     <a class="gplay" href="#">
@@ -723,7 +858,7 @@
                             <div
                                 class=" d-flex flex-wrap justify-content-center justify-content-sm-between text-center py-4">
                                 <!-- Copyright Left -->
-                                <div class="copyright-left">&copy; Copyrights 2020 Indirow All rights reserved.</div>
+                                <div class="copyright-left">&copy; Copyrights 2023 Internovo Ventures Pvt. Ltd."</div>
                                 <!-- Copyright Right -->
                             </div>
 
@@ -797,6 +932,57 @@
             if (event.target == modall) {
                 modalll.style.display = "none";
             }
+        }
+    </script>
+
+    <script>
+        window.document.onkeydown = function (e) {
+            if (!e) {
+                e = event;
+            }
+            if (e.keyCode == 27) {
+                lightbox_close();
+            }
+        }
+
+        function lightbox_open() {
+            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+            window.scrollTo(0, 0);
+            document.getElementById('light').style.display = 'block';
+            document.getElementById('fade').style.display = 'block';
+            lightBoxVideo.play();
+        }
+
+        function lightbox_close() {
+            var lightBoxVideo = document.getElementById("VisaChipCardVideo");
+            document.getElementById('light').style.display = 'none';
+            document.getElementById('fade').style.display = 'none';
+            lightBoxVideo.pause();
+        }
+    </script>
+    <script>
+        window.document.onkeydown = function (e) {
+            if (!e) {
+                e = event;
+            }
+            if (e.keyCode == 27) {
+                lightbox_closee();
+            }
+        }
+
+        function lightbox_openn() {
+            var lightBoxVideo = document.getElementById("VisaChipCardVideoo");
+            window.scrollTo(0, 0);
+            document.getElementById('lightt').style.display = 'block';
+            document.getElementById('fadee').style.display = 'block';
+            lightBoxVideo.play();
+        }
+
+        function lightbox_closee() {
+            var lightBoxVideoo = document.getElementById("VisaChipCardVideoo");
+            document.getElementById('lightt').style.display = 'none';
+            document.getElementById('fadee').style.display = 'none';
+            lightBoxVideoo.pause();
         }
     </script>
 
