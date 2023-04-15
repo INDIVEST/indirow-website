@@ -2941,8 +2941,14 @@ ul.check-list li {
 }
 
 @media  (max-width: 767px) {
+  .hiodell{
+    display: none;
+  }
   .heading-mob{
     text-align: center;
+  }
+  .modal-content.uper{
+  width: 90% !important;
   }
   ul.check-list li {
     list-style: none;
@@ -2979,3 +2985,8 @@ ul.check-list li {
   padding: 8px 16px;
   border-radius: 132px;
 }
+
+
+.modal-content.uper{
+  width: 30%;
+  }
