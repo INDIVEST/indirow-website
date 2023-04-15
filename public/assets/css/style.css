@@ -115,6 +115,7 @@ body {
   color: var(--primary-color);
 }
 
+
 @media (max-width: 991px) {
   .canvas-open {
     overflow: hidden;
@@ -2941,6 +2942,7 @@ ul.check-list li {
 }
 
 @media  (max-width: 767px) {
+
   .hiodell{
     display: none;
   }
@@ -2957,23 +2959,23 @@ ul.check-list li {
 
 
   video#VisaChipCardVideo {
-    width: 40%;
+    width: 77%;
     position: fixed;
     top: 92px;
-    left: 10%;
+    left: 11%;
   }
 video#VisaChipCardVideoo {
-  width: 40%;
+  width: 77%;
   position: fixed;
   top: 92px;
-  left: 10%;
+  left: 11%;
 }
 
 .cls{
   width: fit-content !important;
   position: fixed !important;
    top: 92px !important;
-    right: 30% !important;
+    right: 12% !important;
 }
 
   .service-text ul {
@@ -2995,7 +2997,30 @@ video#VisaChipCardVideoo {
     border: 1px solid #888;
     width: 80%;
 }
+
+
 }
+  video#VisaChipCardVideo {
+    width: 57%;
+    position: fixed;
+    top: 92px;
+    left: 20%;
+  }
+video#VisaChipCardVideoo {
+  width: 57%;
+  position: fixed;
+  top: 92px;
+  left: 20%;
+}
+
+.cls{
+  width: fit-content !important ;
+  position: fixed !important;
+   top: 92px  !important;
+    right: 23%  !important;
+}
+
+
 .gplay {
   display: none;
 }
@@ -3013,28 +3038,9 @@ video#VisaChipCardVideoo {
   width: 30%;
   }
 
-  video#VisaChipCardVideo {
-    width: 80%;
-    position: fixed;
-    top: 92px;
-    left: 10%;
-  }
-video#VisaChipCardVideoo {
-  width: 80%;
-  position: fixed;
-  top: 92px;
-  left: 10%;
-}
-
-.cls{
-  width: fit-content !important;
-  position: fixed !important;
-   top: 92px !important;
-    right: 10% !important;
-}
+  
 
 
-<style>
 #fade {
     display: none;
     position: fixed;
@@ -3096,7 +3102,7 @@ video#VisaChipCardVideoo {
 }
 
 
-<style>
+
 #fadee {
     display: none;
     position: fixed;
