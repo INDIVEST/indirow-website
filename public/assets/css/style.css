@@ -614,7 +614,7 @@ img {
   width: 100%;
   display: block;
   border-radius: 120px;
-  background:  #A9E3CF`;
+  background:  #A9E3CF;
   bottom: 0;
   right: 0;
   -webkit-transform: translate(35%, -28%) rotate(-35deg);
