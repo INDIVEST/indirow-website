@@ -40,36 +40,36 @@
                 </a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler"
                     aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px"><path d="M2 11H22V13H2zM2 5H22V7H2zM2 17H22V19H2z"/></svg>
                 </button>
 
                 <div id="sidebarr" class="navbar-inner">
                     <!--  Mobile Menu Toggler -->
-                    <button id="sidebarr" class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler"
+                    <button style="margin: 15px;" id="sidebarr" class="navbar-toggler d-lg-none" type="button" data-toggle="navbarToggler"
                         aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAABKElEQVR4nO2YzU7CQBRGz+PogldAZYE/rJSCO3CJoLj0kX0A5SeAlDShhpAZ2tA6nU6+k3TXuZmT2+nce0EIIYQQQvhIA3guMV4LuMExl8AXsAGGJcRrAt/AzKVMKhHvn9+CMlfAz0G8GXCNA/r7TMQlyLSB+VGsLfCGIxKZtWEDoxIkPnBMzyLzmmPtLbAwrJ1SERGwMmxofGLNnW8S58h4K5HStchM/t6Ae4vEO57RAZaWP1BtJFIeLZnJypaXPBgyU9k98V8ytZIIRqST49Py9pAHddifTmy4Nr/fbo7b3ftbPQqhRInOqIBtla/z8j2rjB/l7EW8kOkbJJIu8aVgYxUDnzgimFb34mj4UHSS0qxq+HAok0gMqOk4KKgBnRBCCCGEIJMdXBTwCqWDRf4AAAAASUVORK5CYII=">
                     </button>
                     <nav>
                         <ul class="navbar-nav" id="navbar-nav">
-                            <li onclick="navhidee()" class="nav-item">
+                            <li data-toggle="navbarToggler" aria-label="Toggle navigation" class="nav-item">
                                 <a class="nav-link scroll" href="#home">Home</a>
                             </li>
-                            <li class="nav-item">
+                            <li data-toggle="navbarToggler" aria-label="Toggle navigation" class="nav-item">
                                 <a class="nav-link scroll" href="#features">Features</a>
                             </li>
-                            <li class="nav-item">
+                            <li data-toggle="navbarToggler" aria-label="Toggle navigation" class="nav-item">
                                 <a class="nav-link scroll" href="#Products">Products</a>
                             </li>
-                            <li class="nav-item">
+                            <li data-toggle="navbarToggler" aria-label="Toggle navigation" class="nav-item">
                                 <a class="nav-link scroll" href="#about">About Us</a>
                             </li>
-                            <li class="nav-item">
+                            <li data-toggle="navbarToggler" aria-label="Toggle navigation" class="nav-item">
                                 <a class="nav-link scroll" href="#partner">Partner with Us</a>
                             </li>
-                            <li class="nav-item">
+                            <li data-toggle="navbarToggler" aria-label="Toggle navigation" class="nav-item">
                                 <a class="nav-link scroll" href="#Journey">Journey</a>
                             </li>
-                            <li class="nav-item">
+                            <li data-toggle="navbarToggler" aria-label="Toggle navigation" class="nav-item">
                                 <a class="nav-link scroll" href="#contact">Contact Us</a>
                             </li>
                         </ul>
@@ -109,8 +109,8 @@
                                     <span style="cursor: pointer;" class="close">&times;</span>
                                     <div>
                                         <h4 class="text-center">Download Indirow</h4>
-                                        <div class="d-flex justify-content-between flex-wrap">
-                                            <img src="https://bangladeshpost.net/webroot/uploads/featureimage/2022-05/6283c67e772ca.jpg"
+                                        <div class="QR-modal d-flex justify-content-between flex-wrap">
+                                            <img src="https://cdn.discordapp.com/attachments/1110460237275742321/1110468409176637440/qr-code.png"
                                                 alt="">
                                             <div class="mt-2">
                                                 <h6 class="text-center fw-bold my-3"> Scan QR code</h6>
@@ -614,19 +614,21 @@
                                     </a>
                                 </li>
                                 <li class="py-2">
-                                    <a class="media" href="#">
+                                    <a href="tel:02248933333">
                                         <div class="social-icon mr-3">
                                             <i class="fas fa-phone-alt"></i>
                                         </div>
-                                        <span class="media-body align-self-center">+91 9076270971</span>
+                                        <span class="media-body align-self-center">02248933333</span>
                                     </a>
                                 </li>
                                 <li class="py-2">
-                                    <a class="media" href="#">
+                                    <a href="mailto:support@internovo.in">
                                         <div class="social-icon mr-3">
                                             <i class="fas fa-envelope"></i>
                                         </div>
-                                        <span class="media-body align-self-center"> support@internovo.in</span>
+                                        <span class="media-body align-self-center">
+                                            support@internovo.in
+                                        </span>
                                     </a>
                                 </li>
                             </ul>
@@ -786,17 +788,8 @@
     <script src="./assets/js/active.js"></script>
     <script src="./assets/js/indirow.js"></script>
 
-    <script>
-        function navhidee() {
-            var x = document.getElementById("sidebarr");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
-        }
-    </script>
-<script src="./assets/js/Api/Contactus.js"></script>
+
+    <script src="./assets/js/Api/Contactus.js"></script>
 
 
 </body>

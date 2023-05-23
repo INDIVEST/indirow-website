@@ -464,7 +464,7 @@ img {
   border: 0 none;
   border-radius: 6px;
   outline: 0 none;
-  position: relative;
+  /* position: relative; */
   z-index: 1;
 }
 
@@ -2836,7 +2836,7 @@ img.navbar-brand-sticky{
     border: 0 none;
     border-radius: 6px;
     outline: 0 none;
-    position: relative;
+    /* position: relative; */
     z-index: 1;
 }
 
@@ -3157,4 +3157,8 @@ video#VisaChipCardVideoo {
 
 #fadee:hover~#boxclosee {
     display: none;
+}
+.QR-modal img{
+  width: 50%;
+  margin: auto;
 }
