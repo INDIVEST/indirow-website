@@ -980,6 +980,11 @@ img {
   transition: .3s;
   background: transparent;
 }
+@media(max-width: 300px){
+  .navbar .navbar-inner{
+    width: 12rem !important;
+  }
+}
 
 @media (max-width: 991px) {
   .navbar {
@@ -3186,4 +3191,9 @@ video#VisaChipCardVideoo {
   }
 }
 
-
+.navbar-nav a{
+  font-size: 14px;
+}
+.nav-side-container{
+  padding-right: 81px;
+}
