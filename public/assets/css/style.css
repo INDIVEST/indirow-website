@@ -129,6 +129,7 @@ body {
 
 .main {
   background: var(--primary-bg-color-3);
+  margin-bottom: 500px;
 }
 
 
@@ -3200,6 +3201,7 @@ video#VisaChipCardVideoo {
   display: flex;
   gap: 30px;
 }
+
 .blog-desc-content{
   width: 50%;
 }
@@ -3224,4 +3226,21 @@ video#VisaChipCardVideoo {
 .blog-data h3 {
   padding-bottom: 20px;
 }
+.blog-data p {
+  margin: 10px 0px;
+}
 /* blog css end's here */
+
+@media (max-width: 991px){
+  .blog-desc-content-head {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .blog-desc-content{
+    width: 100%;
+  }
+  .blog-desc-img{
+    width: 100%;
+  }
+}
