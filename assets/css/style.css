@@ -129,6 +129,7 @@ body {
 
 .main {
   background: var(--primary-bg-color-3);
+  margin-bottom: 500px;
 }
 
 
@@ -659,7 +660,7 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  background: #2d9670;
+  background: #A9E3CF;
   opacity: 0.94;
   z-index: -1;
 }
@@ -779,14 +780,6 @@ img {
 
 .subscribe-area {
   background: rgba(0, 0, 0, 0) url("../img/bg/map.png") no-repeat scroll center center/cover;
-}
-
-.breadcrumb-area {
-  background: rgba(0, 0, 0, 0) url("../img/bg/download-bg.jpg") no-repeat scroll center center/cover;
-}
-
-.blog .breadcrumb-area {
-  background: rgba(0, 0, 0, 0) url("../img/blog/blog-5.jpg") no-repeat scroll center center/cover;
 }
 
 .inner-area {
@@ -3196,4 +3189,58 @@ video#VisaChipCardVideoo {
 }
 .nav-side-container{
   padding-right: 81px;
+}
+
+
+/* blog's css start's here  */
+
+.blog-desc-main-container {
+  margin: 130px auto;
+}
+.blog-desc-content-head {
+  display: flex;
+  gap: 30px;
+}
+
+.blog-desc-content{
+  width: 50%;
+}
+.blog-desc-img{
+  width: 50%;
+}
+.blog-desc-img img {
+  width: 100%;
+}
+.read-time-blog {
+  margin: 20px 0px;
+}
+.read-time-blog p {
+  font-size: 12px;
+}
+.read-time-blog span {
+  font-weight: bold;
+}
+.blog-data {
+  margin: 40px 0px ;
+}
+.blog-data h3 {
+  padding-bottom: 20px;
+}
+.blog-data p {
+  margin: 10px 0px;
+}
+/* blog css end's here */
+
+@media (max-width: 991px){
+  .blog-desc-content-head {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .blog-desc-content{
+    width: 100%;
+  }
+  .blog-desc-img{
+    width: 100%;
+  }
 }
