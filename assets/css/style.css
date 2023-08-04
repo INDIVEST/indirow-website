@@ -3245,3 +3245,13 @@ video#VisaChipCardVideoo {
     width: 100%;
   }
 }
+.blog-social-icons{
+  gap: 5px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.blog-social-icons svg{
+  width:30px;
+}
