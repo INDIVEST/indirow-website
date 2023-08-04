@@ -660,7 +660,7 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  background: #A9E3CF;
+  background: #2D9670;
   opacity: 0.94;
   z-index: -1;
 }
@@ -1140,7 +1140,8 @@ img {
 }
 
 .navbar.navbar-dark .navbar-nav .nav-link {
-  color: var(--white-black);
+    color: var(--white-black);
+    font-weight: 500;
 }
 
 @media (max-width: 991px) {
