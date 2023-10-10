@@ -2177,6 +2177,10 @@ img {
   font-weight: 500;
 }
 
+.blog-content .blog-title a{
+  cursor: text;
+}
+
 .blog-area .single-blog .blog-content .blog-btn::after {
   position: absolute;
   content: '\f101';
@@ -2239,6 +2243,9 @@ img {
 
 .blog .single-blog {
   margin-bottom: 45px;
+  height: auto;
+  min-height: 480px;
+  position: relative;
 }
 
 .blog .pagination > li > a {
@@ -3229,6 +3236,7 @@ video#VisaChipCardVideoo {
 }
 .blog-data p {
   margin: 10px 0px;
+  text-align: justify;
 }
 /* blog css end's here */
 
