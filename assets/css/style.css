@@ -2182,9 +2182,10 @@ img {
 }
 
 .blog-area .single-blog .blog-content .blog-btn {
-  position: relative;
+  position: absolute;
   display: inline-block;
   font-weight: 500;
+  bottom: 15px;
 }
 
 .blog-content .blog-title a{
@@ -2285,7 +2286,7 @@ img {
 .blog .single-blog {
   margin-bottom: 45px;
   height: auto;
-  min-height: 480px;
+  min-height: 510px;
   position: relative;
 }
 
