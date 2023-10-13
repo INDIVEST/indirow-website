@@ -1,0 +1,8 @@
+.navbar.navbar-dark .navbar-nav .nav-link{
+    color: white;
+}
+@media (max-width:991px) {
+    .navbar.navbar-dark .navbar-nav .nav-link{
+        color: black;
+    }
+}
