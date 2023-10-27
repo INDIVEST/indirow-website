@@ -163,7 +163,7 @@ h1 {
 }
 
 h1,h2 {
-  font-size: var(--h2-size);
+  font-size: var(--h2-size);33
   font-weight: var(--h2-weight);
   line-height: 1.3;
 }
@@ -746,19 +746,19 @@ img {
 }
 
 .homepage-3 .welcome-area {
-  background: rgba(0, 0, 0, 0) url("../img/blog/blog-5.jpg") no-repeat scroll center center/cover;
+  /* background: rgba(0, 0, 0, 0) url("../img/blog/blog-5.jpg") no-repeat scroll center center/cover; */
 }
 
 .homepage-4 .welcome-area {
-  background: rgba(0, 0, 0, 0) url("../img/blog/blog-7.jpg") no-repeat scroll center center/cover;
+  /* background: rgba(0, 0, 0, 0) url("../img/blog/blog-7.jpg") no-repeat scroll center center/cover; */
 }
 
 .homepage-5 .welcome-area {
-  background: rgba(0, 0, 0, 0) url("../img/blog/blog-4.jpg") no-repeat scroll center center/cover;
+  /* background: rgba(0, 0, 0, 0) url("../img/blog/blog-4.jpg") no-repeat scroll center center/cover; */
 }
 
 .homepage-6 .welcome-area {
-  background: rgba(0, 0, 0, 0) url("../img/blog/blog-9.jpg") no-repeat scroll center center/cover;
+  /* background: rgba(0, 0, 0, 0) url("../img/blog/blog-9.jpg") no-repeat scroll center center/cover; */
 }
 
 .accounts .welcome-area {
