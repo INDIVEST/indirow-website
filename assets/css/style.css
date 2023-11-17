@@ -91,7 +91,7 @@
   --white-color: #ffffff;
   --primary-t-color: #222;
   --primary-p-color: #565656;
-  --primary-l-color: rgba(0, 0, 0, 0.12);
+  --primary-l-color: #0000001f;
   --secondary-l-color: rgba(45, 49, 54, 0.09);
   --valid-color: #28a745;
   --invalid-color: #ffa200;
@@ -163,7 +163,7 @@ h1 {
 }
 
 h1,h2 {
-  font-size: var(--h2-size);33
+  font-size: var(--h2-size);
   font-weight: var(--h2-weight);
   line-height: 1.3;
 }
