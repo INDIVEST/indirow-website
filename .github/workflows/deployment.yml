@@ -1,0 +1,27 @@
+name: Automatic Deployment
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      
+      - name: Deploy to AWS Server || executing remote ssh commands using ssh key
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        uses: appleboy/ssh-action@v0.1.7
+        with:
+          host: 3.108.164.102
+          username: ubuntu
+          key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          port: 22
+          script: |
+                  cd /var/www/html/indirow-website/
+                  sudo git pull https://${{ secrets.PAT }}@github.com/INDIVEST/indirow-website.git main
