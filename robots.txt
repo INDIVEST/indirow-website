@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://indirow.com/
+Sitemap: https://indirow.com/sitemap.xml
