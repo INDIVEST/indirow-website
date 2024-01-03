@@ -15,7 +15,7 @@ window.onclick = function (event) {
 }
 
 var modall = document.getElementById("myModall");
-var btnn = document.getElementById("myBtnn");
+var btnn = document.getElementById("myBtn");
 var spann = document.getElementsByClassName("closee")[0];
 btnn.onclick = function () {
     modall.style.display = "block";
