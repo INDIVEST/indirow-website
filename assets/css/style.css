@@ -42,6 +42,7 @@
 :: 27.0 ERROR AREA CSS
 :: 28.0 COMING SOON AREA CSS
 :: 29.0 PREVIEW AREA CSS
+:: 30.0 INLINE STYLE CSS
 ****************************** */
 /* ******************************
 :: 1.0 WEB FONTS
@@ -1361,7 +1362,14 @@ img {
     margin-top: 0;
   }
 }
+.wlcthb{
+  display: flex;
+  justify-content: end;
+  margin: auto;
+}
 
+
+/* style="display: flex; justify-content: end; margin: auto;" */
 .welcome-area .welcome-thumb {
   max-width: 300px;
   padding-top: 70px;
@@ -2874,7 +2882,7 @@ img.navbar-brand-sticky{
   height: auto;
 }
 .btnn{
-  background-color: #4E5351;
+  background: #2d966fc5;
   font-size: 1rem;
     font-weight: 500;
     color: var(--white-color);
@@ -2920,11 +2928,14 @@ img.navbar-brand-sticky{
 
 /* The Close Button */
 .close {
+
   color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
+  cursor: pointer;
 }
+
 
 .close:hover,
 .close:focus {
@@ -2945,7 +2956,7 @@ box-shadow: 0px 7.08116px 44.2572px rgba(0, 0, 0, 0.08);
 border-radius: 31.8652px;
 margin: 45px;
 margin-bottom: 0px;
-height: 166px;
+height: 200px;
 }
 .icon-text h3 {
   font-size: larger;
@@ -2955,6 +2966,10 @@ height: 166px;
   font-size: small;
 }
 
+.icon-text{
+  /* style="margin-top: 45px;" */
+  margin-top: 45px;
+}
 .featured-icon.in img{
   width: 50px;
   height: auto;
@@ -3079,6 +3094,8 @@ video#VisaChipCardVideoo {
   width: fit-content;
   padding: 8px 16px;
   border-radius: 132px;
+  padding-left: 18px;
+  padding-right: 19px;
 }
 
 
@@ -3210,6 +3227,10 @@ video#VisaChipCardVideoo {
   width: 50%;
   margin: auto;
 }
+.whyindi{
+  gap: 30px;
+}
+
 @media (max-width:455px){
   .whyindi {
     flex-direction: column;
@@ -3304,4 +3325,43 @@ video#VisaChipCardVideoo {
 
 .blog-social-icons svg{
   width:30px;
+}
+
+/* ******************************
+:: 30.0 INLINE STYLING
+****************************** */
+
+.navbar-toggler{
+  margin: 15px;
+}
+
+.welcome-desc{
+  line-height: 30px;
+}
+
+.modal-ol{
+  margin-left: 20px;
+}
+
+.ourpartner-container{
+  background: #F6F9FD;
+}
+
+
+.closee{
+  cursor: pointer;
+}
+
+.partnerwithus-img{
+  width: 260px;
+}
+
+.follow-us{
+  border-bottom: 2px solid rgb(212, 212, 212);
+  width: fit-content;
+}
+.flex{
+  display: flex;
+  gap: 15px;
+  margin-left: -5px;
 }
