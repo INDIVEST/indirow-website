@@ -43,6 +43,9 @@
 :: 28.0 COMING SOON AREA CSS
 :: 29.0 PREVIEW AREA CSS
 :: 30.0 INLINE STYLE CSS
+:: 31.0 Explore Products
+
+
 ****************************** */
 /* ******************************
 :: 1.0 WEB FONTS
@@ -1328,6 +1331,10 @@ img {
 
 .dropdown-divider {
   border-color: #8d98b7;
+}
+
+.navbar.navbar-dark .navbar-nav .nav-link:hover{
+  color: darkblue;
 }
 
 /* ******************************
@@ -2956,7 +2963,7 @@ box-shadow: 0px 7.08116px 44.2572px rgba(0, 0, 0, 0.08);
 border-radius: 31.8652px;
 margin: 45px;
 margin-bottom: 0px;
-height: 200px;
+/* height: 200px; */
 }
 .icon-text h3 {
   font-size: larger;
@@ -3330,8 +3337,7 @@ video#VisaChipCardVideoo {
 /* ******************************
 :: 30.0 INLINE STYLING
 ****************************** */
-
-.navbar-toggler{
+/* .navbar-toggler{
   margin: 15px;
 }
 
@@ -3364,4 +3370,225 @@ video#VisaChipCardVideoo {
   display: flex;
   gap: 15px;
   margin-left: -5px;
+}  */
+
+.navbar-toggler{
+  margin: 15px;
+}
+.custom-line{
+  line-height: 30px;
+}
+.btnn{
+  background: #2d966fc5;;
+}
+.close{
+  cursor: pointer;
+}
+.custom-ol{
+  margin-left: 20px;
+}
+.welcome-thumb{
+  display: flex;
+  justify-content: end;
+  margin: auto;
+}
+.featured-icon{
+  margin-bottom: 8px;
+  margin-top: 26px;
+}
+.icon-text{
+  margin-top: 45px;
+}
+.ourpartner-container{
+  background: #F6F9FD;;
+}
+
+.heading-mob{
+  font-size: 32px;
+}
+.whyindi{
+  gap: 30px;
+}
+.closee{
+  cursor: pointer;
+}
+
+.step-pro{
+  padding-left: 18px;
+  padding-right: 19px;
+}
+.custom-follow{
+  border-bottom: 2px solid rgb(212, 212, 212);
+  width: fit-content;
+}
+.flex{
+  display: flex;
+  gap: 15px;
+  margin-left: -5px;
+}
+
+
+/* ******************************
+:: 31.0 Explore Products
+****************************** */
+
+
+.explore-heading {
+  text-align: center;
+
+  margin: 5rem;
+}
+.explore-heading h2{
+  font-size: 32px;
+}
+
+.explore-cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6rem;
+}
+
+.explore-heading span {
+  color: #64a47c;
+}
+
+
+.explore-box {
+  width: 25%;
+  position: relative;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  font-size: small;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.explore-box a {
+  text-decoration: none;
+}
+
+
+
+.explore-img-1 {
+  display: flex;
+  justify-content: center;
+}
+
+
+.explore-img-2  {
+display: flex;
+justify-content: center;
+padding: 1rem;
+
+
+}
+.explore-img-1 img {
+  width: 350px;
+transform: scale(0.9);
+
+}
+.explore-img-2 img {
+  width: 350px;
+transform: scale(1);
+  
+  
+  }
+
+.explore-desc {
+  padding: 20px;
+}
+
+.content p {
+  color: #000000;
+  font-size: 14px;
+  text-align: justify;
+}
+
+.explore-social img {
+  width: 30px;
+  height: 30px;
+}
+
+.explore-social img:hover {
+  border: 1px solid #64a47c;
+  border-radius: 2px;
+}
+
+.explore-desc .content {
+  margin-bottom: 10px;
+}
+
+hr {
+  border: 0;
+  height: 1px;
+  background: #ccc;
+  margin: 10px 0;
+}
+
+.green-line {
+  border: 5px solid #2D9670;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+.explore-box:hover {
+  transform: scale(1.02);
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+
+  cursor: pointer;
+  border: 1px solid orange;
+}
+
+
+@media (max-width: 992px) {
+  .explore-box {
+    width: 75%;
+  }
+
+  .custom-line {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .explore-cards {
+    margin: 1rem;
+    width: auto;
+  }
+
+  .explore-box {
+    width: 100%;
+  }
+
+  .custom-line {
+    display: none;
+  }
+}
+
+@media (max-width: 576px) {
+  .explore-cards {
+    margin: 1rem;
+    width: auto;
+  }
+
+  .explore-box {
+    width: 100%;
+  }
+
+  .custom-line {
+    display: none;
+  }
+}
+
+.internovo{
+  color: orange;
+}
+.internovo:hover{
+  color: lightgreen;
 }
