@@ -16,7 +16,7 @@ jobs:
       
       - name: Deploy to AWS Server || executing remote ssh commands using ssh key
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-        uses: appleboy/ssh-action@v0.1.7
+        uses: appleboy/ssh-action@v0.1.10
         with:
           host: 3.108.164.102
           username: ubuntu
