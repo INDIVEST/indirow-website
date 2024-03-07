@@ -1,0 +1,54 @@
+
+
+
+
+.navbar-brand img {
+    max-width: 100%;
+    height: auto;
+}
+
+.navbar-toggler {
+    background-color: #fff; /* Set your desired color */
+}
+
+/* Style the news container */
+.news-container {
+    padding: 20px;
+    margin-top: 4.5%;
+    height: auto;
+    /* background: whitesmoke; */
+}
+
+.news-row {
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-wrap: wrap;
+margin: 3rem;
+}
+.news-row img{
+    width: 400px;
+    height: 600px;
+}
+
+.news-text {
+    padding: 20px;
+    width: 50%;
+}
+.news-text p {
+    padding: 10px;
+
+}
+
+#highlight{
+    background: yellow;
+}
+
+/* Make the footer responsive */
+@media screen and (max-width: 991px) {
+
+    .news-text {
+        padding: 20px;
+        width: 80%;
+    }
+}
