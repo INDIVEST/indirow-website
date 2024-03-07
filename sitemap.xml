@@ -16,6 +16,10 @@
   <priority>0.80</priority>
 </url>
 <url>
+  <loc>http://indirow.com/news.html</loc>
+  <priority>0.80</priority>
+</url>
+<url>
   <loc>http://indirow.com/blog.html</loc>
   <lastmod>2023-12-05T09:43:27+00:00</lastmod>
   <priority>0.80</priority>
