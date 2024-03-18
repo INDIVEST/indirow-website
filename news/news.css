@@ -49,6 +49,20 @@ margin: 3rem;
 
     .news-text {
         padding: 20px;
-        width: 80%;
+        width: 95%;
+    }
+}
+/* @media screen and (max-width: 768px) {
+
+    .news-text {
+        padding: 20px;
+        width:60% ;
+    }
+} */
+@media screen and (max-width: 576px) {
+
+    .news-text {
+        padding: 20px;
+        width: 100%;
     }
 }

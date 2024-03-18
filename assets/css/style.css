@@ -110,6 +110,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -118,6 +119,7 @@ body {
   line-height: 1.5;
   font-weight: 400;
   color: var(--primary-color);
+
 }
 
 @media (max-width: 991px) {
@@ -1763,6 +1765,25 @@ img {
 /* ******************************
 :: 12.0 DISCOVER AREA CSS
 ****************************** */
+
+.partner-img {
+  width: 185px;
+
+}
+.ourpartner-container {
+  background: #f6f9fd;
+}
+
+@media (max-width: 991px) {
+  .ourpartner-container {
+    padding: 60px 30px;
+  }
+
+  .resp-img {
+    margin: auto;
+  }
+}
+
 .discover-area .list-box .icon {
   color: var(--primary-color-2);
 }
@@ -1770,7 +1791,119 @@ img {
 @media (max-width: 575px) {
   .discover-area .discover-thumb {
     max-width: 300px;
+
   }
+}
+
+
+
+/* image slider */
+.image-slider{
+  text-align: center;
+}
+.image-slider p{
+  margin: 2rem;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
+  color: #2d9670 !important;
+}
+.image-slider > p::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 70px;
+  background-color: var(--primary-color-2);
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+@keyframes slide {
+  from{
+      transform: translateX(0);
+  }
+  to{
+      transform: translateX(-100%);
+  }
+}
+.logos {
+  overflow: hidden;
+  /* margin-top: 5rem; */
+  white-space: nowrap;
+  background: white;
+  position: relative;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Vertically center the logos */
+  padding: 1.75rem;
+}
+
+.logos::before,
+.logos::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 200px;
+  height: 100%;
+  z-index: 2;
+}
+
+.logos::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(45, 150, 111, 0.5), transparent);
+}
+
+.logos::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(45, 150, 111, 0.5), transparent);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  animation: 35s slide infinite linear;
+  white-space: nowrap; /* Prevent line breaks */
+  flex-shrink: 0; /* Prevent shrinking */
+
+}
+
+.logos-slide img {
+  object-fit: cover;
+  padding: 14px;
+  height: 80px; 
+  width: auto; 
+  margin: 0 20px; 
+}
+
+.logos-slide img:nth-child(1) {
+  max-width: 200px;
+  height: auto;
+}
+
+.logos-slide img:nth-child(2) {
+  max-width: 120px;
+  height: auto;
+}
+
+/* Adjustments for smaller devices */
+@media screen and (max-width: 768px) {
+  .logos-slide img {
+    height: 60px; /* Decrease logo size */
+    margin: 0 10px; /* Adjust margin for smaller devices */
+  }
+  .logos::before,
+.logos::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  width: 50px;
+  height: 100%;
+  z-index: 2;
+}
 }
 
 /* ******************************
@@ -3332,19 +3465,7 @@ video#VisaChipCardVideoo {
   }
 }
 
-.partner-img {
-  width: 185px;
-}
 
-@media (max-width: 991px) {
-  .ourpartner-container {
-    padding: 60px 30px;
-  }
-
-  .resp-img {
-    margin: auto;
-  }
-}
 
 .navbar-nav a {
   font-size: 14px;
@@ -3504,9 +3625,7 @@ video#VisaChipCardVideoo {
   margin-top: 45px;
 }
 
-.ourpartner-container {
-  background: #f6f9fd;
-}
+
 
 .heading-mob {
   font-size: 32px;
