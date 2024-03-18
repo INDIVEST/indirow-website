@@ -119,6 +119,7 @@ body {
   line-height: 1.5;
   font-weight: 400;
   color: var(--primary-color);
+
 }
 
 @media (max-width: 991px) {
@@ -1767,6 +1768,7 @@ img {
 
 .partner-img {
   width: 185px;
+
 }
 .ourpartner-container {
   background: #f6f9fd;
@@ -1789,16 +1791,35 @@ img {
 @media (max-width: 575px) {
   .discover-area .discover-thumb {
     max-width: 300px;
+
   }
 }
+
+
 
 /* image slider */
 .image-slider{
   text-align: center;
 }
-.image-slider h3{
+.image-slider p{
   margin: 2rem;
+  margin-bottom: 80px;
+  margin-top: 80px;
+  font-size: 2rem;
+  font-weight: 600;
+  position: relative;
   color: #2d9670 !important;
+}
+.image-slider > p::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 70px;
+  background-color: var(--primary-color-2);
+  bottom: -15px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 @keyframes slide {
   from{
@@ -1847,11 +1868,25 @@ img {
   animation: 35s slide infinite linear;
   white-space: nowrap; /* Prevent line breaks */
   flex-shrink: 0; /* Prevent shrinking */
+
 }
 
 .logos-slide img {
-  height: 80px;
-  margin: 0 20px; /* Adjust margin for smaller devices */
+  object-fit: cover;
+  padding: 14px;
+  height: 80px; 
+  width: auto; 
+  margin: 0 20px; 
+}
+
+.logos-slide img:nth-child(1) {
+  max-width: 200px;
+  height: auto;
+}
+
+.logos-slide img:nth-child(2) {
+  max-width: 120px;
+  height: auto;
 }
 
 /* Adjustments for smaller devices */
